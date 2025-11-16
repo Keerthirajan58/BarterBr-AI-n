@@ -5,6 +5,7 @@ An AI-powered product valuation system for a college barter marketplace, built w
 ## 🎯 Features
 
 - **AI-Powered Valuation**: Uses Google Gemini 2.5 Flash for intelligent price predictions
+- **Negotiation Coach**: AI assistant that helps users during chat negotiations with smart message suggestions and cash adjustment recommendations
 - **Multimodal Analysis**: Analyzes product text descriptions and up to 3 images
 - **Detailed Breakdown**: Provides price breakdown including base price, age factor, condition factor, brand factor, and accessory value
 - **High Confidence**: Achieves 70-90% confidence on tested products
@@ -12,10 +13,22 @@ An AI-powered product valuation system for a college barter marketplace, built w
 
 ## 🚀 Live API
 
-**Endpoint:**
+**Base URL:**
 ```
-POST https://us-central1-barterbrain-1254a.cloudfunctions.net/ProductPricePredictionApi/ai/metadataValuation
+https://us-central1-barterbrain-1254a.cloudfunctions.net/BarterBrainAPI
 ```
+
+**Endpoints:**
+
+1. **Price Prediction:**
+   ```
+   POST /ai/metadataValuation
+   ```
+
+2. **Negotiation Coach:**
+   ```
+   POST /ai/negotiationCoach
+   ```
 
 See [API_DOCUMENTATION.md](./API_DOCUMENTATION.md) for complete API reference.
 
@@ -32,16 +45,23 @@ Includes:
 
 ## 🧪 Testing
 
-Run the test script to verify the API:
+Run the test scripts to verify the APIs:
 
+**Price Prediction:**
 ```bash
 node test_function.js
+```
+
+**Negotiation Coach:**
+```bash
+node test_negotiation_coach.js
 ```
 
 **Test Results:**
 - ✅ iPhone 13 Pro: $535.54 (90% confidence)
 - ✅ Calculus Textbook: $36 (70% confidence)
 - ✅ PS5 Digital: $358.90 (90% confidence)
+- ✅ Negotiation scenarios: Smart suggestions with fair cash adjustments
 
 ## 🛠️ Setup
 
@@ -151,5 +171,3 @@ MIT
 - [Flutter Integration Guide](./MOBILE_INTEGRATION_GUIDE.md)
 
 ---
-
-**Built with ❤️ for Barter Brain - College Marketplace**
