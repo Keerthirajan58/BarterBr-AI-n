@@ -1,0 +1,50 @@
+{
+  "textbook": {
+    "id": "textbook-1",
+    "title": "Intro to Algorithms (3rd ed)",
+    "condition": "good",
+    "images": ["https://example.com/demo-textbook.jpg"],
+    "breakdown": {
+      "basePrice": 100.00,
+      "ageFactor": 0.70,
+      "conditionFactor": 0.85,
+      "brandFactor": 1.00,
+      "accessoryValue": 15.00
+    },
+    "value": 74.50,
+    "confidence": 0.80,
+    "explanation": "Older edition of a popular textbook; fair condition with solution manual increases buyer interest—estimated value reduced from new price accordingly."
+  },
+  "phone": {
+    "id": "phone-1",
+    "title": "Phone X (2018), 64GB",
+    "condition": "fair",
+    "images": ["https://example.com/demo-phone.jpg"],
+    "breakdown": {
+      "basePrice": 350.00,
+      "ageFactor": 0.60,
+      "conditionFactor": 0.70,
+      "brandFactor": 1.10,
+      "accessoryValue": 5.00
+    },
+    "value": 166.70,
+    "confidence": 0.75,
+    "explanation": "Older mid-range phone with visible wear; brand retains some premium, but age and condition reduce price."
+  },
+  "bike": {
+    "id": "bike-1",
+    "title": "Hybrid commuter bike",
+    "condition": "good",
+    "images": ["https://example.com/demo-bike.jpg"],
+    "breakdown": {
+      "basePrice": 400.00,
+      "ageFactor": 0.85,
+      "conditionFactor": 0.80,
+      "brandFactor": 1.00,
+      "accessoryValue": 30.00
+    },
+    "value": 302.00,
+    "confidence": 0.82,
+    "explanation": "Good-condition commuter bike with useful accessories; small reduction from base due to age/condition."
+  }
+}
