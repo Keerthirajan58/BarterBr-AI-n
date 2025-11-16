@@ -1,7 +1,7 @@
 // Test script for ProductPricePredictionApi Firebase Function
 const fetch = require('node-fetch');
 
-const FUNCTION_URL = 'https://us-central1-barterbrain-1254a.cloudfunctions.net/ProductPricePredictionApi/ai/metadataValuation';
+const FUNCTION_URL = 'https://us-central1-barterbrain-1254a.cloudfunctions.net/BarterBrainAPI/ai/metadataValuation';
 
 // Test cases
 const testCases = [
